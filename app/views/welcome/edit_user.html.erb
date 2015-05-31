@@ -1,0 +1,20 @@
+<h1>Welcome#index editing</h1>
+<ul>
+<% @users.each do |users| %> 
+   <li><%= users %></li>
+   <% end %>
+</ul>
+
+<table>
+
+  <tr>
+    <th> City </th>
+    <th> Team </th>
+  </tr>
+  <% @teams.each do |city,teams| %>
+    <tr>
+       <td><%=city %></td>
+       <td><%=teams %></td>
+    </tr>
+  <%end%>
+</table>
